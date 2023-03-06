@@ -1,5 +1,37 @@
 .App {
-  background-color: #b9b9b9;
+  
+  margin-top: 30px;
   padding: 40px;
-  height: 100vh;
+  height: 65%;
+  width: 65%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.todo-list-container{
+  padding: 0;
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+
+
+}
+
+.todo-list-container ul{
+	    list-style: none;
+			padding: 0;
+			margin: 0;
+			width: 100%;
+			max-width: 500px;
+}
+
+.buscar-crear{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
 }

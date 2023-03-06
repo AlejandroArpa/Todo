@@ -99,27 +99,31 @@ function App() {
         total={totalTodos}
         completed={completed}
         />
-      <TodoBuscar 
-        SearchValue={SearchValue}
-        setSearchValue={setSearchValue}
-        />
-      <CrearTodoBoton 
-        onAdd={()=>addTodos(SearchValue)}
-
-      />
-      <TodoLista >
-        {searchedTodos.map(todo => (
-          <TodoItem 
-          key={todo.text} 
-          text={todo.text}
-          completado={todo.completado}
-          onComplete={()=>completeTodos(todo.text)}
-          onDelete={()=>deleteTodos(todo.text)}
-          
+        <div className="buscar-crear">
+          <TodoBuscar 
+            SearchValue={SearchValue}
+            setSearchValue={setSearchValue}
+            />
+          <CrearTodoBoton 
+            onAdd={()=>addTodos(SearchValue)}
           />
-        ) )}
-        
-      </TodoLista>
+        </div>
+      
+      <div className="todo-list-container">
+        <TodoLista >
+          {searchedTodos.map(todo => (
+            <TodoItem 
+            key={todo.text} 
+            text={todo.text}
+            completado={todo.completado}
+            onComplete={()=>completeTodos(todo.text)}
+            onDelete={()=>deleteTodos(todo.text)}
+            
+            />
+          ) )}
+          
+        </TodoLista>
+      </div>
       
 
     </div>

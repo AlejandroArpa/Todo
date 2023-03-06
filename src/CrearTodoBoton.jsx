@@ -1,10 +1,11 @@
 import React from 'react'
+import "./CrearTodoBoton.css"
 
 function CrearTodoBoton(props) {
   
   
   return (
-    <button onClick={props.onAdd}>Entrar</button>
+    <button className='boton' onClick={props.onAdd}>Entrar</button>
   )
 }
 

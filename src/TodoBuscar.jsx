@@ -1,5 +1,6 @@
 
 import React from 'react'
+import "./TodoBuscar.css"
 
 
 function TodoBuscar({SearchValue, setSearchValue}) {
