@@ -1,5 +1,5 @@
 import React from 'react'
-import "./TodoItem.css"
+import "../Styles/TodoItem.css"
 import { Tag,TagCloseButton, TagLabel } from "@chakra-ui/tag"
 
 
